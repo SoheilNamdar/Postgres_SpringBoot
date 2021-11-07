@@ -10,6 +10,6 @@ public class ProductDao {
     JdbcTemplate jdbcTemplate;
 
     public void persist() {
-        jdbcTemplate.update("INSERT INTO products (id, name, lastName) VALUES (?,?,?)",1,"ram", "NAMDAR");
+        jdbcTemplate.update("INSERT INTO products (name, lastname) VALUES (?,?)","ram", "NAMDAR");
     }
 }
